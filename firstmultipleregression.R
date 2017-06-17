@@ -1,3 +1,5 @@
+#Used dataset from http://college.cengage.com/mathematics/brase/understandable_statistics/7e/students/datasets/mlr/frames/frame.html
+
 dataset = read.table('scores.tsv',header=T,sep="\t",dec=".",stringsAsFactors = FALSE)
 colnames(dataset)
 
