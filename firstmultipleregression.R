@@ -5,7 +5,7 @@ colnames(dataset)
 
 library(caTools)
 set.seed(123)
-split = sample.split(dataset$FINAL,SplitRatio = 4/5)
+split = sample.split(dataset$FINAL,SplitRatio = 3/5)
 train_set = subset(dataset,split== T)
 test_set=subset(dataset,split==F)
 
@@ -24,3 +24,4 @@ regressor = lm(FINAL~.,
 
 
 y_pred= predict(regressor, newdata = test_set)
+round(y_pred)
